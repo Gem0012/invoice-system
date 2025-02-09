@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Admin Panel</title>
+    <link rel="stylesheet" href="main.css">
+    
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <h2>Business Admin</h2>
+        </div>
+        <ul class="nav-menu">
+           <a href="dashboard.html"><li class="nav-item">Dashboard</li></a> 
+            <a href="invoice.html"><li class="nav-item">Invoices</li></a>
+          
+            
+           <a href="Reports/monthly.html "> <li class="nav-item">Reports</li></a>
+            
+        </ul>
+    </div>
+    <!-- Main Content -->
+        <div class="main-content"> 
+            <h2>Create New Invoice</h2><br>
+        <!-- Invoice Creation Form -->
+        <div class="invoice-form">
+            <!--Customer Information-->
+            <div class="form-group"> <h3>Customer Information</h3><br>
+                <div>
+                    <input class="form-group" type="text" placeholder="Enter Name" >
+                </div>
+                <div>
+                    <input class="form-group" type="text" placeholder="Adress">
+                </div>
+                <div>
+                    <input class="form-group" type="email" placeholder="Email">
+                </div>
+                <div>
+                    <input class="form-group" type="text" placeholder="Phone">
+                </div>
+                
+            </div>
+            <div class="form-group">
+                <h3>Products:</h3>
+                <div class="product-selection">
+                    <select>
+                        <option>Option1</option>
+                        <option>Option2</option>
+                    </select>
+                    <input type="number" placeholder="Quantity">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>TAX/VAT:</label>
+                <input type="number" step="0.01" placeholder="%">
+            </div>
+            <div class="form-group">
+                <label>Total:</label>
+                <input type="number" step="0.01">
+            </div>
+            <button class="btn btn-primary">Enter</button>
+        </div>
+
+        <!-- Invoice List Table -->
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Invoice #</th>
+                    <th>Customer</th>
+                    <th>Date</th>
+                    <th>Amount</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>INV-001</td>
+                    <td>Customer A</td>
+                    <td>2023-07-20</td>
+                    <td>100</td>
+                    <td>Paid</td>
+                    <td>
+                        <button class="btn btn-primary">PDF</button>
+                        <button class="btn"></button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    
+
+</div>
+</body>
+</html>

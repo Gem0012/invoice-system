@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Admin - Reports</title>
+    <link rel="stylesheet" href="../main.css">
+</head>
+<body>
+    <!-- Sidebar (Same as original) -->
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <h2>Business Admin</h2>
+        </div>
+        <ul class="nav-menu">
+            <a href="../dashboard.html"> <li class="nav-item">Dashboard</li> </a>
+            <a href="../invoice.html"><li class="nav-item">Invoices</li></a>
+           
+            <a href="Reports/monthly.html "> <li class="nav-item">Reports</li></a>
+        </ul>
+    </div>
+
+    <!-- Reports Content -->
+    <div class="main-content">
+        <!-- Time Period Selection -->
+        <div class="summary-cards">
+            <a href="monthly.html"><div class="card time-period">Monthly</div></a>
+            <a href="quarterly.html"><div class="card time-period active">Quarterly</div></a>
+            <a href="yearly.html"><div class="card time-period">Yearly</div></a>
+        </div>
+
+        <!-- Report Input Sections -->
+        <div class="report-form">
+            <!-- Quarterly Report -->
+            <div class="report-section active ">
+                <h2>Quarterly Progress Report</h2>
+                <div class="form-group">
+                    <label>Quarter:</label>
+                    <select>
+                        <option>Q1</option>
+                        <option>Q2</option>
+                        <option>Q3</option>
+                        <option>Q4</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Quarterly Revenue:</label>
+                    <input type="number" step="0.01">
+                </div>
+                <div class="form-group">
+                    <label>Average Monthly Growth:</label>
+                    <input type="number" step="0.1">
+                </div>
+            </div>
+
+            <button class="btn btn-primary">Save Report</button>
+            <button class="btn btn-primary">Download Report</button>
+        </div>
+    </div>
+</body>
+</html>
